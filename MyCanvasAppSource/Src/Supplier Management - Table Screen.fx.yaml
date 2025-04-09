@@ -1,0 +1,291 @@
+"'Supplier Management - Table Screen' As screen.'autoLayout_HeaderFooter_ver1.0'":
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    ScreenContainer1_3 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(245, 245, 245, 1)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =16
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =16
+        PaddingLeft: =16
+        PaddingRight: =16
+        PaddingTop: =16
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            ZIndex: =1
+
+            Header1_3 As Header:
+                Align: =""
+                BasePaletteColor: =
+                BorderStyle: =""
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =RGBA(12, 35, 63, 1)
+                Height: =75
+                LayoutMinHeight: =75
+                LayoutMinWidth: =Parent.Width
+                Logo: ='Nexel Master-01'
+                OnSelectLogo: =false
+                Style: ='Header.Style'.Neutral
+                Title: ="Suppliers List"
+                UserEmail: =User().Email
+                UserImage: =User().Image
+                UserName: =User().FullName
+                Width: =Parent.Width
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+        FooterContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =50
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            ZIndex: =2
+
+            btnHome_1 As Button:
+                Align: =""
+                AlignInContainer: =AlignInContainer.Stretch
+                Appearance: ='ButtonCanvas.Appearance'.Subtle
+                BasePaletteColor: =
+                BorderColor: =
+                BorderStyle: =""
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =32
+                Icon: ="Home"
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =Navigate('Home Screen',ScreenTransition.Fade)
+                Text: ="Home"
+                VerticalAlign: =""
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+            btnNew_1 As Button:
+                Align: =""
+                AlignInContainer: =AlignInContainer.Stretch
+                Appearance: ='ButtonCanvas.Appearance'.Subtle
+                BasePaletteColor: =
+                BorderColor: =
+                BorderStyle: =""
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =32
+                Icon: ="Add"
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =NewForm(Supplier_Management_Form);Navigate('Supplier Management - Form Screen',ScreenTransition.Fade)
+                Text: ="+ New"
+                VerticalAlign: =""
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+            btnEdit_1 As Button:
+                Align: =""
+                AlignInContainer: =AlignInContainer.Stretch
+                Appearance: ='ButtonCanvas.Appearance'.Subtle
+                BasePaletteColor: =
+                BorderColor: =
+                BorderStyle: =""
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =32
+                Icon: ="Edit"
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =EditForm(Supplier_Management_Form);Navigate('Supplier Management - Form Screen',ScreenTransition.Fade)
+                Text: ="Edit"
+                VerticalAlign: =""
+                Visible: =Not(IsBlank(Suppliers_List_Table.Selected))
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+            btnRefresh_1 As Button:
+                Align: =""
+                AlignInContainer: =AlignInContainer.Stretch
+                Appearance: ='ButtonCanvas.Appearance'.Subtle
+                BasePaletteColor: =
+                BorderColor: =
+                BorderStyle: =""
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =32
+                Icon: ="ArrowSync"
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =Refresh('Suppliers List')
+                Text: ="Refresh"
+                VerticalAlign: =""
+                Visible: =true
+                Width: =100
+                X: =0
+                Y: =0
+                ZIndex: =4
+
+            btnDelete_1 As Button:
+                Align: =""
+                AlignInContainer: =AlignInContainer.Stretch
+                Appearance: ='ButtonCanvas.Appearance'.Subtle
+                BasePaletteColor: =
+                BorderColor: =
+                BorderStyle: =""
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =32
+                Icon: ="Delete"
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =Remove('Suppliers List',Suppliers_List_Table.Selected)
+                Text: ="Delete"
+                VerticalAlign: =""
+                Visible: =Not(IsBlank(Suppliers_List_Table.Selected))
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =5
+
+        MainContainer1_3 As groupContainer.verticalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            ZIndex: =3
+
+            Suppliers_List_Table As Table.pcfdataset:
+                AlignInContainer: =AlignInContainer.Stretch
+                ContextualLookupColumnFilters: ="yes"
+                DateOnlyFormat: ='PowerAppsOneGrid.DateOnlyFormat'.ShortDate
+                DateTimeFormat: ='PowerAppsOneGrid.DateTimeFormat'.ShortDateTime
+                DisplayMode: =DisplayMode.Edit
+                EnableRangeSelection: ='PowerAppsOneGrid.EnableRangeSelection'.Disable
+                FillPortions: =1
+                Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
+                Items: ='Suppliers List'
+                LayoutMinHeight: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
+                LayoutMinWidth: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
+                LookupFilterBeginsWith: ="no"
+                onCellValueChange: =false
+                onFilter: =false
+                onNavigate: =false
+                onRowSelect: =false
+                onSave: =false
+                OnSelect: =false
+                ReflowBehavior: ='PowerAppsOneGrid.ReflowBehavior'.Reflow
+                Visible: =true
+                Width: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+                "'Contact Person Name2' As PowerAppsOneGridTemplate_dataField.textualColumn":
+                    FieldDisplayName: ="Contact Person Name"
+                    FieldName: ="ContactPerson"
+                    FieldType: ="s"
+                    FieldVariantName: ="textualColumn"
+                    Order: =8
+                    ZIndex: =5
+
+                "'Contact Person Phone2' As PowerAppsOneGridTemplate_dataField.textualColumn":
+                    FieldDisplayName: ="Contact Person Phone"
+                    FieldName: ="ContactPersonPhone"
+                    FieldType: ="s"
+                    FieldVariantName: ="textualColumn"
+                    Order: =8
+                    ZIndex: =6
+
+                "'Contact Person Email2' As PowerAppsOneGridTemplate_dataField.textualColumn":
+                    FieldDisplayName: ="Contact Person Email"
+                    FieldName: ="ContactPersonEmail"
+                    FieldType: ="s"
+                    FieldVariantName: ="textualColumn"
+                    Order: =8
+                    ZIndex: =7
+
+                "'Supplier Category2' As PowerAppsOneGridTemplate_dataField.textualColumn":
+                    FieldDisplayName: ="Supplier Category"
+                    FieldName: ="SupplierCategory"
+                    FieldType: ="E"
+                    FieldVariantName: ="textualColumn"
+                    Order: =4
+                    ZIndex: =9
+
+                Status2 As PowerAppsOneGridTemplate_dataField.textualColumn:
+                    FieldDisplayName: ="Status"
+                    FieldName: ="Status"
+                    FieldType: ="E"
+                    FieldVariantName: ="textualColumn"
+                    Order: =7
+                    ZIndex: =11
+
+                "'NDA Signed2' As PowerAppsOneGridTemplate_dataField.textualColumn":
+                    FieldDisplayName: ="NDA Signed"
+                    FieldName: ="NDASigned"
+                    FieldType: ="E"
+                    FieldVariantName: ="textualColumn"
+                    Order: =6
+                    ZIndex: =13
+
+                Name1 As PowerAppsOneGridTemplate_dataField.textualColumn:
+                    FieldDisplayName: ="Name"
+                    FieldName: ="{Name}"
+                    FieldType: ="s"
+                    FieldVariantName: ="textualColumn"
+                    Order: =3
+                    ZIndex: =14
+

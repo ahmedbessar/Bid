@@ -1,0 +1,272 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  In Bids Management:
+    Children:
+      - ScreenContainer3_5:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            Fill: =RGBA(245, 245, 245, 1)
+            Height: =Parent.Height
+            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =16
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Width: =Parent.Width
+          Children:
+            - HeaderContainer3_5:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  Fill: =RGBA(255, 255, 255, 1)
+                  FillPortions: =0
+                  Height: =75
+                  LayoutDirection: =LayoutDirection.Horizontal
+                  RadiusBottomLeft: =8
+                  RadiusBottomRight: =8
+                  RadiusTopLeft: =8
+                  RadiusTopRight: =8
+                Children:
+                  - Header2_5:
+                      Control: Header@0.0.42
+                      Properties:
+                        FontColor: =RGBA(12, 35, 63, 1)
+                        Logo: ='Nexel Master-01'
+                        LogoTooltip: =
+                        Style: ='Header.Style'.Neutral
+                        Title: ="In-Bids Management"
+            - FooterContainer1_12:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  Fill: =RGBA(255, 255, 255, 1)
+                  FillPortions: =0
+                  Height: =50
+                  LayoutAlignItems: =LayoutAlignItems.Center
+                  LayoutDirection: =LayoutDirection.Horizontal
+                Children:
+                  - btnHome3_4:
+                      Control: Button@0.0.44
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Appearance: ='ButtonCanvas.Appearance'.Subtle
+                        Icon: ="Home"
+                        OnSelect: =Navigate('Home Screen',ScreenTransition.Fade)
+                        Text: ="Home"
+                        Width: =90
+                  - btnRefresh_3:
+                      Control: Button@0.0.44
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Appearance: ='ButtonCanvas.Appearance'.Subtle
+                        Icon: ="ArrowSync"
+                        OnSelect: =Refresh('Bids Library')
+                        Text: ="Refresh"
+                        Width: =100
+                  - btnMyEvaluations:
+                      Control: Button@0.0.44
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Appearance: ='ButtonCanvas.Appearance'.Subtle
+                        Icon: ="Chat"
+                        OnSelect: =Navigate('In Bids Management - Scoring Screen',ScreenTransition.Fade)
+                        Text: ="My Evaluations"
+                        Width: =150
+                  - btnInfo_4:
+                      Control: Button@0.0.44
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Appearance: ='ButtonCanvas.Appearance'.Subtle
+                        Icon: ="Info"
+                        OnSelect: =Navigate('In Bids Management - Info',ScreenTransition.Fade)
+                        Text: ="Info"
+                        Visible: =!IsBlank(tblInBids.Selected)
+                        Width: =100
+                  - btnCreateBidOpeningMeeting:
+                      Control: Button@0.0.44
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Appearance: ='ButtonCanvas.Appearance'.Subtle
+                        Icon: ="Add"
+                        OnSelect: =Navigate('In Bids Management - Create Meeting',ScreenTransition.Fade)
+                        Text: ="Create Bid Opening Meeting"
+                        Visible: =And(!IsBlank(tblInBids.Selected),Now()>tblInBids.Selected.'Due Date',tblInBids.Selected.'Meeting Status'.Value <> "Scheduled")
+                        Width: =250
+                  - btnOpenBidFolder:
+                      Control: Button@0.0.44
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Appearance: ='ButtonCanvas.Appearance'.Subtle
+                        Icon: ="Open"
+                        OnSelect: =Launch(tblInBids.Selected.'Link to item')
+                        Text: ="Open Bid Folder"
+                        Visible: =And(!IsBlank(tblInBids.Selected),Now()>tblInBids.Selected.'Meeting  Start Date')
+                        Width: =160
+                  - btnExtendDeadline:
+                      Control: Button@0.0.44
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Appearance: ='ButtonCanvas.Appearance'.Subtle
+                        Icon: ="History"
+                        OnSelect: =Navigate('In Bids Management - Extending Deadline',ScreenTransition.Fade)
+                        Text: ="Extend Deadline"
+                        Visible: =And(!IsBlank(tblInBids.Selected),Now()<tblInBids.Selected.'Due Date')
+                        Width: =160
+                  - btnSubmitForEvaluation:
+                      Control: Button@0.0.44
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Appearance: ='ButtonCanvas.Appearance'.Subtle
+                        Icon: ="Send"
+                        OnSelect: =Navigate('In Bids Management - Submit for Evaluation',ScreenTransition.Fade)
+                        Text: ="Submit for Evaluation"
+                        Visible: =And(!IsBlank(tblInBids.Selected),Now()>tblInBids.Selected.'Meeting  Start Date',Now()>tblInBids.Selected.'Due Date')
+                        Width: =190
+                  - btnFinalScores:
+                      Control: Button@0.0.44
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Appearance: ='ButtonCanvas.Appearance'.Subtle
+                        Icon: ="AppsList"
+                        OnSelect: |-
+                          =Clear(IndexCollection);
+                          ForAll(
+                              Sort(
+                                  Filter(
+                                      'Aggregate Scores List',
+                                      'Bid Name' = tblInBids.Selected.Name
+                                  ),
+                                  'Aggregate Score',
+                                  SortOrder.Descending
+                              ),
+                              Collect(
+                                  IndexCollection,
+                                  Patch(
+                                      Last(
+                                          FirstN(
+                                              Sort(
+                                                  Filter(
+                                                      'Aggregate Scores List',
+                                                      'Bid Name' = tblInBids.Selected.Name
+                                                  ),
+                                                  'Aggregate Score',
+                                                  SortOrder.Descending
+                                              ),
+                                              CountRows(IndexCollection) + 1
+                                          )
+                                      ),
+                                      {Index: CountRows(IndexCollection) + 1}
+                                  )
+                              )
+                          );
+                          Navigate(
+                              'Post Bids Management - Aggregate Scores',
+                              ScreenTransition.Fade
+                          )
+                        Text: ="Final Scores"
+                        Visible: =false
+                        Width: =150
+            - MainContainer3_5:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  DropShadow: =DropShadow.None
+                  Fill: =Parent.Fill
+                  LayoutAlignItems: =LayoutAlignItems.Stretch
+                  LayoutDirection: =LayoutDirection.Horizontal
+                  LayoutWrap: =true
+                  RadiusBottomLeft: =8
+                  RadiusBottomRight: =8
+                  RadiusTopLeft: =8
+                  RadiusTopRight: =8
+                  Width: =1000
+                Children:
+                  - tblInBids:
+                      Control: Table@1.0.278
+                      Properties:
+                        FillPortions: =1
+                        Items: =Filter('Bids Library',isBidFolder.Value = "Yes")
+                      Children:
+                        - Title3:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Title"
+                              FieldName: ="Title"
+                              FieldType: ="s"
+                              Order: =1
+                        - Due Date1:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Due Date"
+                              FieldName: ="DueDate"
+                              FieldType: ="D"
+                              Order: =2
+                        - Meeting  Start Date1:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Meeting  Start Date"
+                              FieldName: ="MeetingStartDate"
+                              FieldType: ="d"
+                              Order: =3
+                        - Meeting Status1:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Meeting Status"
+                              FieldName: ="MeetingStatus"
+                              FieldType: ="E"
+                              Order: =4
+                        - Bid Open Status1:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Bid Open Status"
+                              FieldName: ="BidOpenStatus"
+                              FieldType: ="E"
+                              Order: =6
+                        - Bid Evaluators1:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Bid Evaluators"
+                              FieldName: ="BidEvaluators"
+                              FieldType: ="E"
+                              Order: =7
+                        - Bid Evaluation Status1:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Bid Evaluation Status"
+                              FieldName: ="BidEvaluationStatus"
+                              FieldType: ="E"
+                              Order: =8
+                        - Attendees2:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Attendees"
+                              FieldName: ="Attendees"
+                              FieldType: ="E"
+                              Order: =10

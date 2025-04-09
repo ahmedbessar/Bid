@@ -1,0 +1,288 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Pre Bids - Table Screen:
+    Children:
+      - MainContainer1_ContractManagementTableScreen:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            Fill: =RGBA(245, 245, 245, 1)
+            Height: =Parent.Height
+            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =16
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Width: =Parent.Width
+          Children:
+            - HeaderContainer_ContractManagementTableScreen:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  AlignInContainer: =AlignInContainer.SetByContainer
+                  Fill: =RGBA(255, 255, 255, 1)
+                  FillPortions: =0
+                  Height: =75
+                  LayoutDirection: =LayoutDirection.Horizontal
+                Children:
+                  - Header_ContractManagementTableScreen:
+                      Control: Header@0.0.42
+                      Properties:
+                        FontColor: =RGBA(12, 35, 63, 1)
+                        Logo: ='Nexel Master-01'
+                        Style: ='Header.Style'.Neutral
+                        Title: ="Contract Requests"
+            - FooterContainer_ContractManagementTableScreen:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  AlignInContainer: =AlignInContainer.SetByContainer
+                  Fill: =RGBA(255, 255, 255, 1)
+                  FillPortions: =0
+                  Height: =50
+                  LayoutAlignItems: =LayoutAlignItems.Center
+                  LayoutDirection: =LayoutDirection.Horizontal
+                  LayoutOverflowX: =LayoutOverflow.Scroll
+                Children:
+                  - btnHome:
+                      Control: Button@0.0.44
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Appearance: ='ButtonCanvas.Appearance'.Subtle
+                        Icon: ="Home"
+                        OnSelect: =Navigate('Home Screen',ScreenTransition.Fade)
+                        Text: ="Home"
+                  - btnNew:
+                      Control: Button@0.0.44
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Appearance: ='ButtonCanvas.Appearance'.Subtle
+                        Icon: ="Add"
+                        OnSelect: =NewForm(Contract_Request_Form);Navigate('Pre Bids - Form Screen',ScreenTransition.Fade)
+                        Text: ="New"
+                  - btnEdit:
+                      Control: Button@0.0.44
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Appearance: ='ButtonCanvas.Appearance'.Subtle
+                        Icon: ="Edit"
+                        OnSelect: =EditForm(Contract_Request_Form);Navigate('Pre Bids - Form Screen',ScreenTransition.Fade)
+                        Text: ="Edit"
+                        Visible: =And(Not(IsBlank(Contract_Request_Table.Selected)),Contract_Request_Table.Selected.'Contract Status'.Value <> "Approved")
+                  - btnPublishBid:
+                      Control: Button@0.0.44
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Appearance: ='ButtonCanvas.Appearance'.Subtle
+                        Icon: ="CheckmarkCircle"
+                        OnSelect: |-
+                          =Publish_Bid.Run(
+                              Concat(
+                                  Contract_Request_Table.Selected.Bidders,
+                                  Value,
+                                  ","
+                              ),
+                              Contract_Request_Table.Selected.'Project Name',
+                              Contract_Request_Table.Selected.'Due Date',
+                              Contract_Request_Table.Selected.ID
+                          );
+                          Set(
+                              varTimer,
+                              true
+                          )
+                        Text: ="Publish"
+                        Visible: =Contract_Request_Table.Selected.'Contract Status'.Value = "Approved"
+                  - btnRefresh:
+                      Control: Button@0.0.44
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Appearance: ='ButtonCanvas.Appearance'.Subtle
+                        Icon: ="ArrowSync"
+                        OnSelect: =Refresh('Contract Request List')
+                        Text: ="Refresh"
+                        Width: =100
+                  - btnDetails:
+                      Control: Button@0.0.44
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Appearance: ='ButtonCanvas.Appearance'.Subtle
+                        Icon: ="ErrorCircle"
+                        OnSelect: =Set(varSelectedContract,Contract_Request_Table.Selected);ViewForm(Contract_Request_Form);Navigate('Pre Bids - Form Screen')
+                        Text: ="Details"
+                        Visible: =Not(IsBlank(Contract_Request_Table.Selected))
+                        Width: =100
+            - MainContainer2_ContractManagementTableScreen:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  AlignInContainer: =AlignInContainer.SetByContainer
+                  Fill: =RGBA(255, 255, 255, 1)
+                  LayoutDirection: =LayoutDirection.Vertical
+                Children:
+                  - Contract_Request_Table:
+                      Control: Table@1.0.278
+                      Properties:
+                        EnableRangeSelection: ='PowerAppsOneGrid.EnableRangeSelection'.Enable
+                        FillPortions: =1
+                        HeaderFontSize: =16
+                        Items: ='Contract Request List'
+                        OnSelect: =
+                        ReflowBehavior: ='PowerAppsOneGrid.ReflowBehavior'.Reflow
+                        Width: =Parent.Width
+                      Children:
+                        - ID2:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="ID"
+                              FieldName: ="ID"
+                              FieldType: ="n"
+                              Order: =1
+                              Width: =100
+                        - Requestor Name1:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Requestor Name"
+                              FieldName: ="RequestorName"
+                              FieldType: ="s"
+                              Order: =4
+                              Width: =100
+                        - Requesting Department1:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Requesting Department"
+                              FieldName: ="RequestingDepartment"
+                              FieldType: ="E"
+                              Order: =5
+                              Width: =100
+                        - Created1:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Date"
+                              FieldName: ="Created"
+                              FieldType: ="d"
+                              Order: =5
+                              Width: =100
+                        - Estimated Value1:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Estimated Value"
+                              FieldName: ="EstimatedValue"
+                              FieldType: ="n"
+                              Order: =6
+                              Width: =100
+                        - Contract Status1:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Contract Status"
+                              FieldName: ="ContractStatus"
+                              FieldType: ="E"
+                              Order: =7
+                              Width: =100
+                        - Title2:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Bid Name"
+                              FieldName: ="Title"
+                              FieldType: ="s"
+                              Order: =3
+                              Width: =100
+                        - Published Status1:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Published Status"
+                              FieldName: ="BidStatus"
+                              FieldType: ="E"
+                              Order: =8
+                              Width: =100
+      - Background_ContractManagementTableScreen:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            Fill: =RGBA(0,0,0,0.3)
+            Height: =Parent.Height
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            Visible: =varTimer
+            Width: =Parent.Width
+          Children:
+            - PopupContainer_ContractManagementTableScreen:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  AlignInContainer: =AlignInContainer.SetByContainer
+                  Fill: =RGBA(255, 255, 255, 1)
+                  FillPortions: =0
+                  LayoutAlignItems: =LayoutAlignItems.Center
+                  LayoutDirection: =LayoutDirection.Vertical
+                  LayoutJustifyContent: =LayoutJustifyContent.Center
+                Children:
+                  - Text_Container:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0
+                        Height: =100
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Horizontal
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                      Children:
+                        - SuccessMessage:
+                            Control: Text@0.0.50
+                            Properties:
+                              Align: ='TextCanvas.Align'.Center
+                              Height: =Parent.Height
+                              Size: =16
+                              Text: ="The bid " & Contract_Request_Table.Selected.'Project Name' & " has been published successfully"
+                              VerticalAlign: =VerticalAlign.Middle
+                              Weight: ='TextCanvas.Weight'.Bold
+                              Width: =Parent.Width
+                              Wrap: =false
+                  - btnOK_Popup:
+                      Control: Button@0.0.44
+                      Properties:
+                        OnSelect: =Set(varTimer,false)
+                        Text: ="Close"
+      - Timer_ContractManagementTableScreen:
+          Control: Timer@2.1.0
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Duration: =3000
+            HoverColor: =RGBA(255, 255, 255, 1)
+            OnTimerEnd: =Set(varTimer,false)
+            Start: =varTimer
+            Visible: =false
+            X: =555
+            Y: =711

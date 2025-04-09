@@ -1,0 +1,3200 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.4.json",
+  "runs": [
+    {
+      "columnKind": "utf16CodeUnits",
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "results": [
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.FooterContainer_ContractManagementTableScreen.btnHome.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.FooterContainer_ContractManagementTableScreen.btnHome.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pre Bids - Table Screen",
+                "type": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.FooterContainer_ContractManagementTableScreen.btnHome"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.FooterContainer_ContractManagementTableScreen.btnNew.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.FooterContainer_ContractManagementTableScreen.btnNew.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pre Bids - Table Screen",
+                "type": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.FooterContainer_ContractManagementTableScreen.btnNew"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.FooterContainer_ContractManagementTableScreen.btnEdit.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.FooterContainer_ContractManagementTableScreen.btnEdit.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pre Bids - Table Screen",
+                "type": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.FooterContainer_ContractManagementTableScreen.btnEdit"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.FooterContainer_ContractManagementTableScreen.btnPublishBid.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.FooterContainer_ContractManagementTableScreen.btnPublishBid.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pre Bids - Table Screen",
+                "type": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.FooterContainer_ContractManagementTableScreen.btnPublishBid"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.FooterContainer_ContractManagementTableScreen.btnRefresh.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.FooterContainer_ContractManagementTableScreen.btnRefresh.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pre Bids - Table Screen",
+                "type": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.FooterContainer_ContractManagementTableScreen.btnRefresh"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.FooterContainer_ContractManagementTableScreen.btnDetails.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.FooterContainer_ContractManagementTableScreen.btnDetails.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pre Bids - Table Screen",
+                "type": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.FooterContainer_ContractManagementTableScreen.btnDetails"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.MainContainer2_ContractManagementTableScreen.Contract_Request_Table.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.MainContainer2_ContractManagementTableScreen.Contract_Request_Table.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pre Bids - Table Screen",
+                "type": "'Pre Bids - Table Screen'.MainContainer1_ContractManagementTableScreen.MainContainer2_ContractManagementTableScreen.Contract_Request_Table"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Pre Bids - Table Screen'.Background_ContractManagementTableScreen.PopupContainer_ContractManagementTableScreen.btnOK_Popup.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Pre Bids - Table Screen'.Background_ContractManagementTableScreen.PopupContainer_ContractManagementTableScreen.btnOK_Popup.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pre Bids - Table Screen",
+                "type": "'Pre Bids - Table Screen'.Background_ContractManagementTableScreen.PopupContainer_ContractManagementTableScreen.btnOK_Popup"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Supplier Management - Form Screen'.ScreenContainer1_2.FooterContainer1_2.ButtonCanvas3_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Supplier Management - Form Screen'.ScreenContainer1_2.FooterContainer1_2.ButtonCanvas3_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Supplier Management - Form Screen",
+                "type": "'Supplier Management - Form Screen'.ScreenContainer1_2.FooterContainer1_2.ButtonCanvas3_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Supplier Management - Form Screen'.ScreenContainer1_2.FooterContainer1_2.ButtonCanvas3_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Supplier Management - Form Screen'.ScreenContainer1_2.FooterContainer1_2.ButtonCanvas3_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Supplier Management - Form Screen",
+                "type": "'Supplier Management - Form Screen'.ScreenContainer1_2.FooterContainer1_2.ButtonCanvas3_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.FormContainer1_1.Contract_Request_Form.Attachments_DataCard1_1.DataCardValue36_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.FormContainer1_1.Contract_Request_Form.Attachments_DataCard1_1.DataCardValue36_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pre Bids - Form Screen",
+                "type": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.FormContainer1_1.Contract_Request_Form.Attachments_DataCard1_1.DataCardValue36_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.Approval_Container.TitleContainer.btnShowComments.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.Approval_Container.TitleContainer.btnShowComments.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pre Bids - Form Screen",
+                "type": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.Approval_Container.TitleContainer.btnShowComments"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.Approval_Container.TitleContainer.btnShowStatus.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.Approval_Container.TitleContainer.btnShowStatus.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pre Bids - Form Screen",
+                "type": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.Approval_Container.TitleContainer.btnShowStatus"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.Approval_Container.BU_Head_Container.BadgeCanvas2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.Approval_Container.BU_Head_Container.BadgeCanvas2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pre Bids - Form Screen",
+                "type": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.Approval_Container.BU_Head_Container.BadgeCanvas2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.Approval_Container.Finance_Department_Container.BadgeCanvas2_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.Approval_Container.Finance_Department_Container.BadgeCanvas2_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pre Bids - Form Screen",
+                "type": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.Approval_Container.Finance_Department_Container.BadgeCanvas2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.Approval_Container.CPRC_Committee_Container.BadgeCanvas2_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.Approval_Container.CPRC_Committee_Container.BadgeCanvas2_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pre Bids - Form Screen",
+                "type": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.Approval_Container.CPRC_Committee_Container.BadgeCanvas2_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.Approval_Container.CPRC_Committee_Container_1.BadgeCanvas2_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.Approval_Container.CPRC_Committee_Container_1.BadgeCanvas2_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pre Bids - Form Screen",
+                "type": "'Pre Bids - Form Screen'.ScreenContainer3_1.MainContainer3_1.Approval_Container.CPRC_Committee_Container_1.BadgeCanvas2_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Pre Bids - Form Screen'.ScreenContainer3_1.FooterContainer1_8.ButtonCanvas3_7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Pre Bids - Form Screen'.ScreenContainer3_1.FooterContainer1_8.ButtonCanvas3_7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pre Bids - Form Screen",
+                "type": "'Pre Bids - Form Screen'.ScreenContainer3_1.FooterContainer1_8.ButtonCanvas3_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Pre Bids - Form Screen'.ScreenContainer3_1.FooterContainer1_8.ButtonCanvas3_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Pre Bids - Form Screen'.ScreenContainer3_1.FooterContainer1_8.ButtonCanvas3_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pre Bids - Form Screen",
+                "type": "'Pre Bids - Form Screen'.ScreenContainer3_1.FooterContainer1_8.ButtonCanvas3_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Supplier Management - Table Screen'.ScreenContainer1_3.FooterContainer1_3.btnHome_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Supplier Management - Table Screen'.ScreenContainer1_3.FooterContainer1_3.btnHome_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Supplier Management - Table Screen",
+                "type": "'Supplier Management - Table Screen'.ScreenContainer1_3.FooterContainer1_3.btnHome_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Supplier Management - Table Screen'.ScreenContainer1_3.FooterContainer1_3.btnNew_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Supplier Management - Table Screen'.ScreenContainer1_3.FooterContainer1_3.btnNew_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Supplier Management - Table Screen",
+                "type": "'Supplier Management - Table Screen'.ScreenContainer1_3.FooterContainer1_3.btnNew_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Supplier Management - Table Screen'.ScreenContainer1_3.FooterContainer1_3.btnEdit_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Supplier Management - Table Screen'.ScreenContainer1_3.FooterContainer1_3.btnEdit_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Supplier Management - Table Screen",
+                "type": "'Supplier Management - Table Screen'.ScreenContainer1_3.FooterContainer1_3.btnEdit_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Supplier Management - Table Screen'.ScreenContainer1_3.FooterContainer1_3.btnRefresh_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Supplier Management - Table Screen'.ScreenContainer1_3.FooterContainer1_3.btnRefresh_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Supplier Management - Table Screen",
+                "type": "'Supplier Management - Table Screen'.ScreenContainer1_3.FooterContainer1_3.btnRefresh_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Supplier Management - Table Screen'.ScreenContainer1_3.FooterContainer1_3.btnDelete_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Supplier Management - Table Screen'.ScreenContainer1_3.FooterContainer1_3.btnDelete_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Supplier Management - Table Screen",
+                "type": "'Supplier Management - Table Screen'.ScreenContainer1_3.FooterContainer1_3.btnDelete_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Supplier Management - Table Screen'.ScreenContainer1_3.MainContainer1_3.Suppliers_List_Table.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Supplier Management - Table Screen'.ScreenContainer1_3.MainContainer1_3.Suppliers_List_Table.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Supplier Management - Table Screen",
+                "type": "'Supplier Management - Table Screen'.ScreenContainer1_3.MainContainer1_3.Suppliers_List_Table"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.MainContainer1_HomeScreen.FooterContainer_HomeScreen.btnBidsDashboard.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.MainContainer1_HomeScreen.FooterContainer_HomeScreen.btnBidsDashboard.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home Screen",
+                "type": "'Home Screen'.MainContainer1_HomeScreen.FooterContainer_HomeScreen.btnBidsDashboard"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.MainContainer1_HomeScreen.FooterContainer_HomeScreen.btnSuppliersManagement.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.MainContainer1_HomeScreen.FooterContainer_HomeScreen.btnSuppliersManagement.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home Screen",
+                "type": "'Home Screen'.MainContainer1_HomeScreen.FooterContainer_HomeScreen.btnSuppliersManagement"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.MainContainer1_HomeScreen.FooterContainer_HomeScreen.btnPreBids.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.MainContainer1_HomeScreen.FooterContainer_HomeScreen.btnPreBids.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home Screen",
+                "type": "'Home Screen'.MainContainer1_HomeScreen.FooterContainer_HomeScreen.btnPreBids"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.MainContainer1_HomeScreen.FooterContainer_HomeScreen.btnInBids.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.MainContainer1_HomeScreen.FooterContainer_HomeScreen.btnInBids.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home Screen",
+                "type": "'Home Screen'.MainContainer1_HomeScreen.FooterContainer_HomeScreen.btnInBids"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.MainContainer1_HomeScreen.FooterContainer_HomeScreen.btnPostBids.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.MainContainer1_HomeScreen.FooterContainer_HomeScreen.btnPostBids.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home Screen",
+                "type": "'Home Screen'.MainContainer1_HomeScreen.FooterContainer_HomeScreen.btnPostBids"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.FooterContainer1_15.btnHome3_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.FooterContainer1_15.btnHome3_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management - Scoring Screen",
+                "type": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.FooterContainer1_15.btnHome3_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.FooterContainer1_15.btnRefresh_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.FooterContainer1_15.btnRefresh_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management - Scoring Screen",
+                "type": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.FooterContainer1_15.btnRefresh_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.FooterContainer1_15.btnOpenBidFolder_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.FooterContainer1_15.btnOpenBidFolder_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management - Scoring Screen",
+                "type": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.FooterContainer1_15.btnOpenBidFolder_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management - Scoring Screen",
+                "type": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "In Bids Management - Scoring Screen",
+                "type": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.ctrlAttachment.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.ctrlAttachment.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management - Scoring Screen",
+                "type": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.ctrlAttachment"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.btnSubmitScore.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.btnSubmitScore.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "In Bids Management - Scoring Screen",
+                "type": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.btnSubmitScore"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.txtTechnicalScore.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.txtTechnicalScore.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management - Scoring Screen",
+                "type": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.txtTechnicalScore"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.txtCommercialScore.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.txtCommercialScore.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management - Scoring Screen",
+                "type": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.txtCommercialScore"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.btnDeleteIcon.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.btnDeleteIcon.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management - Scoring Screen",
+                "type": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.btnDeleteIcon"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.btnDeleteIcon.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.btnDeleteIcon.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "In Bids Management - Scoring Screen",
+                "type": "'In Bids Management - Scoring Screen'.ScreenContainer3_8.MainContainer3_8.Evaluations_Gallery.btnDeleteIcon"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Extending Deadline'.ScreenContainer3_2.FooterContainer1_9.btnBack3_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Extending Deadline'.ScreenContainer3_2.FooterContainer1_9.btnBack3_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management - Extending Deadline",
+                "type": "'In Bids Management - Extending Deadline'.ScreenContainer3_2.FooterContainer1_9.btnBack3_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Extending Deadline'.ScreenContainer3_2.FooterContainer1_9.btnSubmit.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Extending Deadline'.ScreenContainer3_2.FooterContainer1_9.btnSubmit.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management - Extending Deadline",
+                "type": "'In Bids Management - Extending Deadline'.ScreenContainer3_2.FooterContainer1_9.btnSubmit"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Create Meeting'.ScreenContainer3_3.FooterContainer1_10.btnBack3_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Create Meeting'.ScreenContainer3_3.FooterContainer1_10.btnBack3_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management - Create Meeting",
+                "type": "'In Bids Management - Create Meeting'.ScreenContainer3_3.FooterContainer1_10.btnBack3_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Create Meeting'.ScreenContainer3_3.FooterContainer1_10.btnSubmit_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Create Meeting'.ScreenContainer3_3.FooterContainer1_10.btnSubmit_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management - Create Meeting",
+                "type": "'In Bids Management - Create Meeting'.ScreenContainer3_3.FooterContainer1_10.btnSubmit_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Create Meeting'.ScreenContainer3_3.MainContainer3_3.InBids_Form_1.'Meeting  Start Date_DataCard1_1'.HourValue1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Create Meeting'.ScreenContainer3_3.MainContainer3_3.InBids_Form_1.'Meeting  Start Date_DataCard1_1'.HourValue1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management - Create Meeting",
+                "type": "'In Bids Management - Create Meeting'.ScreenContainer3_3.MainContainer3_3.InBids_Form_1.'Meeting  Start Date_DataCard1_1'.HourValue1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Create Meeting'.ScreenContainer3_3.MainContainer3_3.InBids_Form_1.'Meeting  Start Date_DataCard1_1'.MinuteValue1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Create Meeting'.ScreenContainer3_3.MainContainer3_3.InBids_Form_1.'Meeting  Start Date_DataCard1_1'.MinuteValue1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management - Create Meeting",
+                "type": "'In Bids Management - Create Meeting'.ScreenContainer3_3.MainContainer3_3.InBids_Form_1.'Meeting  Start Date_DataCard1_1'.MinuteValue1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Submit for Evaluation'.ScreenContainer3_4.FooterContainer1_11.btnBack3_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Submit for Evaluation'.ScreenContainer3_4.FooterContainer1_11.btnBack3_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management - Submit for Evaluation",
+                "type": "'In Bids Management - Submit for Evaluation'.ScreenContainer3_4.FooterContainer1_11.btnBack3_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Submit for Evaluation'.ScreenContainer3_4.FooterContainer1_11.btnSubmit_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Submit for Evaluation'.ScreenContainer3_4.FooterContainer1_11.btnSubmit_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management - Submit for Evaluation",
+                "type": "'In Bids Management - Submit for Evaluation'.ScreenContainer3_4.FooterContainer1_11.btnSubmit_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Submit for Evaluation'.ScreenContainer3_4.MainContainer3_4.frmSubmitForEval.'Bid Evaluators_DataCard2'.ComboBox1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Submit for Evaluation'.ScreenContainer3_4.MainContainer3_4.frmSubmitForEval.'Bid Evaluators_DataCard2'.ComboBox1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management - Submit for Evaluation",
+                "type": "'In Bids Management - Submit for Evaluation'.ScreenContainer3_4.MainContainer3_4.frmSubmitForEval.'Bid Evaluators_DataCard2'.ComboBox1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnHome3_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnHome3_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management",
+                "type": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnHome3_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnExtendDeadline.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnExtendDeadline.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management",
+                "type": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnExtendDeadline"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnFinalScores.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnFinalScores.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management",
+                "type": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnFinalScores"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnRefresh_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnRefresh_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management",
+                "type": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnRefresh_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnMyEvaluations.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnMyEvaluations.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management",
+                "type": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnMyEvaluations"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnInfo_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnInfo_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management",
+                "type": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnInfo_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnCreateBidOpeningMeeting.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnCreateBidOpeningMeeting.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management",
+                "type": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnCreateBidOpeningMeeting"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnOpenBidFolder.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnOpenBidFolder.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management",
+                "type": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnOpenBidFolder"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnSubmitForEvaluation.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnSubmitForEvaluation.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management",
+                "type": "'In Bids Management'.ScreenContainer3_5.FooterContainer1_12.btnSubmitForEvaluation"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management'.ScreenContainer3_5.MainContainer3_5.tblInBids.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management'.ScreenContainer3_5.MainContainer3_5.tblInBids.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management",
+                "type": "'In Bids Management'.ScreenContainer3_5.MainContainer3_5.tblInBids"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Info'.ScreenContainer3_6.FooterContainer1_13.btnBack3_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Info'.ScreenContainer3_6.FooterContainer1_13.btnBack3_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management - Info",
+                "type": "'In Bids Management - Info'.ScreenContainer3_6.FooterContainer1_13.btnBack3_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Info'.ScreenContainer3_6.MainContainer3_6.frmInBids_Info.'Meeting  Start Date_DataCard1'.HourValue1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Info'.ScreenContainer3_6.MainContainer3_6.frmInBids_Info.'Meeting  Start Date_DataCard1'.HourValue1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management - Info",
+                "type": "'In Bids Management - Info'.ScreenContainer3_6.MainContainer3_6.frmInBids_Info.'Meeting  Start Date_DataCard1'.HourValue1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Info'.ScreenContainer3_6.MainContainer3_6.frmInBids_Info.'Meeting  Start Date_DataCard1'.MinuteValue1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Info'.ScreenContainer3_6.MainContainer3_6.frmInBids_Info.'Meeting  Start Date_DataCard1'.MinuteValue1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "In Bids Management - Info",
+                "type": "'In Bids Management - Info'.ScreenContainer3_6.MainContainer3_6.frmInBids_Info.'Meeting  Start Date_DataCard1'.MinuteValue1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.FooterContainer1_16.btnHome3_7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.FooterContainer1_16.btnHome3_7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Post Bids Management - Aggregate Scores",
+                "type": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.FooterContainer1_16.btnHome3_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.FooterContainer1_16.btnRefresh_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.FooterContainer1_16.btnRefresh_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Post Bids Management - Aggregate Scores",
+                "type": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.FooterContainer1_16.btnRefresh_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.FooterContainer1_16.btnOpenBidFolder_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.FooterContainer1_16.btnOpenBidFolder_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Post Bids Management - Aggregate Scores",
+                "type": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.FooterContainer1_16.btnOpenBidFolder_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Post Bids Management - Aggregate Scores",
+                "type": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Post Bids Management - Aggregate Scores",
+                "type": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery.iconSendCPRCFinalApproval.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery.iconSendCPRCFinalApproval.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Post Bids Management - Aggregate Scores",
+                "type": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery.iconSendCPRCFinalApproval"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery.iconSendCPRCFinalApproval.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery.iconSendCPRCFinalApproval.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Post Bids Management - Aggregate Scores",
+                "type": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery.iconSendCPRCFinalApproval"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery.txtCommercialScore_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery.txtCommercialScore_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Post Bids Management - Aggregate Scores",
+                "type": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery.txtCommercialScore_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery.CheckboxCanvas1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery.CheckboxCanvas1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Post Bids Management - Aggregate Scores",
+                "type": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery.CheckboxCanvas1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'ONLY for Attachment Function: ctrlAttachment'.frm_TrainingCourses.Attachments_DataCard1.DataCardValue33.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'ONLY for Attachment Function: ctrlAttachment'.frm_TrainingCourses.Attachments_DataCard1.DataCardValue33.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ONLY for Attachment Function: ctrlAttachment",
+                "type": "'ONLY for Attachment Function: ctrlAttachment'.frm_TrainingCourses.Attachments_DataCard1.DataCardValue33"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management'.ScreenContainer3_7.FooterContainer1_14.btnHome3_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management'.ScreenContainer3_7.FooterContainer1_14.btnHome3_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Post Bids Management",
+                "type": "'Post Bids Management'.ScreenContainer3_7.FooterContainer1_14.btnHome3_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management'.ScreenContainer3_7.FooterContainer1_14.btnRefresh_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management'.ScreenContainer3_7.FooterContainer1_14.btnRefresh_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Post Bids Management",
+                "type": "'Post Bids Management'.ScreenContainer3_7.FooterContainer1_14.btnRefresh_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management'.ScreenContainer3_7.FooterContainer1_14.btnInfo_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management'.ScreenContainer3_7.FooterContainer1_14.btnInfo_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Post Bids Management",
+                "type": "'Post Bids Management'.ScreenContainer3_7.FooterContainer1_14.btnInfo_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management'.ScreenContainer3_7.FooterContainer1_14.btnOpenBidFolder_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management'.ScreenContainer3_7.FooterContainer1_14.btnOpenBidFolder_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Post Bids Management",
+                "type": "'Post Bids Management'.ScreenContainer3_7.FooterContainer1_14.btnOpenBidFolder_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management'.ScreenContainer3_7.FooterContainer1_14.btnFinalScores_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management'.ScreenContainer3_7.FooterContainer1_14.btnFinalScores_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Post Bids Management",
+                "type": "'Post Bids Management'.ScreenContainer3_7.FooterContainer1_14.btnFinalScores_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management'.ScreenContainer3_7.FooterContainer1_14.btnFinalScores_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management'.ScreenContainer3_7.FooterContainer1_14.btnFinalScores_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Post Bids Management",
+                "type": "'Post Bids Management'.ScreenContainer3_7.FooterContainer1_14.btnFinalScores_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management'.ScreenContainer3_7.MainContainer3_7.tbl_PostBids.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management'.ScreenContainer3_7.MainContainer3_7.tbl_PostBids.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Post Bids Management",
+                "type": "'Post Bids Management'.ScreenContainer3_7.MainContainer3_7.tbl_PostBids"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management - Info'.ScreenContainer3_10.FooterContainer1_17.btnBack3_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management - Info'.ScreenContainer3_10.FooterContainer1_17.btnBack3_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Post Bids Management - Info",
+                "type": "'Post Bids Management - Info'.ScreenContainer3_10.FooterContainer1_17.btnBack3_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management - Info'.ScreenContainer3_10.MainContainer3_10.frmPostBids_Info.'Meeting  Start Date_DataCard1_2'.HourValue1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management - Info'.ScreenContainer3_10.MainContainer3_10.frmPostBids_Info.'Meeting  Start Date_DataCard1_2'.HourValue1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Post Bids Management - Info",
+                "type": "'Post Bids Management - Info'.ScreenContainer3_10.MainContainer3_10.frmPostBids_Info.'Meeting  Start Date_DataCard1_2'.HourValue1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management - Info'.ScreenContainer3_10.MainContainer3_10.frmPostBids_Info.'Meeting  Start Date_DataCard1_2'.MinuteValue1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management - Info'.ScreenContainer3_10.MainContainer3_10.frmPostBids_Info.'Meeting  Start Date_DataCard1_2'.MinuteValue1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Post Bids Management - Info",
+                "type": "'Post Bids Management - Info'.ScreenContainer3_10.MainContainer3_10.frmPostBids_Info.'Meeting  Start Date_DataCard1_2'.MinuteValue1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management - Submit For Contract Review'.ScreenContainer3_11.FooterContainer1_18.btnBack3_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management - Submit For Contract Review'.ScreenContainer3_11.FooterContainer1_18.btnBack3_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Post Bids Management - Submit For Contract Review",
+                "type": "'Post Bids Management - Submit For Contract Review'.ScreenContainer3_11.FooterContainer1_18.btnBack3_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management - Submit For Contract Review'.ScreenContainer3_11.FooterContainer1_18.btnBack3_7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management - Submit For Contract Review'.ScreenContainer3_11.FooterContainer1_18.btnBack3_7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Post Bids Management - Submit For Contract Review",
+                "type": "'Post Bids Management - Submit For Contract Review'.ScreenContainer3_11.FooterContainer1_18.btnBack3_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management - Submit For Contract Review'.ScreenContainer3_11.MainContainer3_11.frmSubmitContract.Attachments_DataCard2.DataCardValue51.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management - Submit For Contract Review'.ScreenContainer3_11.MainContainer3_11.frmSubmitContract.Attachments_DataCard2.DataCardValue51.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Post Bids Management - Submit For Contract Review",
+                "type": "'Post Bids Management - Submit For Contract Review'.ScreenContainer3_11.MainContainer3_11.frmSubmitContract.Attachments_DataCard2.DataCardValue51"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.varBrandFontColor"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.varBrandFontColor",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varBrandFontColor",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.ST Logo"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.ST Logo",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "ST Logo",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.ST CLM Background Image"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.ST CLM Background Image",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "ST CLM Background Image",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Nexel Wallpaper"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Nexel Wallpaper",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Nexel Wallpaper",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Supplier Management - Form Screen'.ScreenContainer1_2.MainContainer1_2.Supplier_Management_Form.Item"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Supplier Management - Form Screen'.ScreenContainer1_2.MainContainer1_2.Supplier_Management_Form.Item",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Item",
+                "module": "Supplier Management - Form Screen",
+                "type": "'Supplier Management - Form Screen'.ScreenContainer1_2.MainContainer1_2.Supplier_Management_Form"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Extending Deadline'.ScreenContainer3_2.MainContainer3_2.InBids_Form.Item"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Extending Deadline'.ScreenContainer3_2.MainContainer3_2.InBids_Form.Item",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Item",
+                "module": "In Bids Management - Extending Deadline",
+                "type": "'In Bids Management - Extending Deadline'.ScreenContainer3_2.MainContainer3_2.InBids_Form"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Create Meeting'.ScreenContainer3_3.MainContainer3_3.InBids_Form_1.Item"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Create Meeting'.ScreenContainer3_3.MainContainer3_3.InBids_Form_1.Item",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Item",
+                "module": "In Bids Management - Create Meeting",
+                "type": "'In Bids Management - Create Meeting'.ScreenContainer3_3.MainContainer3_3.InBids_Form_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Submit for Evaluation'.ScreenContainer3_4.MainContainer3_4.frmSubmitForEval.Item"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Submit for Evaluation'.ScreenContainer3_4.MainContainer3_4.frmSubmitForEval.Item",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Item",
+                "module": "In Bids Management - Submit for Evaluation",
+                "type": "'In Bids Management - Submit for Evaluation'.ScreenContainer3_4.MainContainer3_4.frmSubmitForEval"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Info'.ScreenContainer3_6.MainContainer3_6.frmInBids_Info.Item"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Info'.ScreenContainer3_6.MainContainer3_6.frmInBids_Info.Item",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Item",
+                "module": "In Bids Management - Info",
+                "type": "'In Bids Management - Info'.ScreenContainer3_6.MainContainer3_6.frmInBids_Info"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Info'.ScreenContainer3_6.MainContainer3_6.frmInBids_Info.Attendees_DataCard2.Label1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Info'.ScreenContainer3_6.MainContainer3_6.frmInBids_Info.Attendees_DataCard2.Label1.Text",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "In Bids Management - Info",
+                "type": "'In Bids Management - Info'.ScreenContainer3_6.MainContainer3_6.frmInBids_Info.Attendees_DataCard2.Label1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'In Bids Management - Info'.ScreenContainer3_6.MainContainer3_6.frmInBids_Info.'Bid Evaluators_DataCard3'.Label1_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'In Bids Management - Info'.ScreenContainer3_6.MainContainer3_6.frmInBids_Info.'Bid Evaluators_DataCard3'.Label1_1.Text",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "In Bids Management - Info",
+                "type": "'In Bids Management - Info'.ScreenContainer3_6.MainContainer3_6.frmInBids_Info.'Bid Evaluators_DataCard3'.Label1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery.CheckboxCanvas1.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery.CheckboxCanvas1.Visible",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "Post Bids Management - Aggregate Scores",
+                "type": "'Post Bids Management - Aggregate Scores'.ScreenContainer3_9.MainContainer3_9.Aggregate_Scores_Gallery.CheckboxCanvas1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'ONLY for Attachment Function: ctrlAttachment'.frm_TrainingCourses.Item"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'ONLY for Attachment Function: ctrlAttachment'.frm_TrainingCourses.Item",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Item",
+                "module": "ONLY for Attachment Function: ctrlAttachment",
+                "type": "'ONLY for Attachment Function: ctrlAttachment'.frm_TrainingCourses"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management - Info'.ScreenContainer3_10.MainContainer3_10.frmPostBids_Info.Item"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management - Info'.ScreenContainer3_10.MainContainer3_10.frmPostBids_Info.Item",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Item",
+                "module": "Post Bids Management - Info",
+                "type": "'Post Bids Management - Info'.ScreenContainer3_10.MainContainer3_10.frmPostBids_Info"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management - Info'.ScreenContainer3_10.MainContainer3_10.frmPostBids_Info.Attendees_DataCard2_1.Label1_2.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management - Info'.ScreenContainer3_10.MainContainer3_10.frmPostBids_Info.Attendees_DataCard2_1.Label1_2.Text",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Post Bids Management - Info",
+                "type": "'Post Bids Management - Info'.ScreenContainer3_10.MainContainer3_10.frmPostBids_Info.Attendees_DataCard2_1.Label1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management - Info'.ScreenContainer3_10.MainContainer3_10.frmPostBids_Info.'Bid Evaluators_DataCard3_1'.Label1_3.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management - Info'.ScreenContainer3_10.MainContainer3_10.frmPostBids_Info.'Bid Evaluators_DataCard3_1'.Label1_3.Text",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Post Bids Management - Info",
+                "type": "'Post Bids Management - Info'.ScreenContainer3_10.MainContainer3_10.frmPostBids_Info.'Bid Evaluators_DataCard3_1'.Label1_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Post Bids Management - Submit For Contract Review'.ScreenContainer3_11.MainContainer3_11.frmSubmitContract.Item"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Post Bids Management - Submit For Contract Review'.ScreenContainer3_11.MainContainer3_11.frmSubmitContract.Item",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Item",
+                "module": "Post Bids Management - Submit For Contract Review",
+                "type": "'Post Bids Management - Submit For Contract Review'.ScreenContainer3_11.MainContainer3_11.frmSubmitContract"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 4
+        }
+      ],
+      "tool": {
+        "driver": {
+          "fullName": "PowerApps app checker",
+          "name": "PowerApps app checker",
+          "rules": [
+            {
+              "id": "acc-AccessibleLabelNeeded",
+              "messageStrings": {
+                "issue": {
+                  "text": "Missing accessible label"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Edit the accessible label property to describe the item."
+                ],
+                "level": "Medium",
+                "primaryCategory": "accessibility",
+                "whyFix": "If there's no accessible text, people who can’t see the screen won't understand what’s in images and controls."
+              }
+            },
+            {
+              "id": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+              "messageStrings": {
+                "issue": {
+                  "text": "Missing tab stop"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Set TabIndex to 0 or greater to ensure that interactive elements have a tab stop."
+                ],
+                "level": "Medium",
+                "primaryCategory": "accessibility",
+                "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
+              }
+            },
+            {
+              "id": "app-UnusedVariables",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unused variable"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove the unused variable."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
+              }
+            },
+            {
+              "id": "app-UnusedMediaResources",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unused media files"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove the unused media file in the Media pane."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "This media file is not referenced by any control formulas so it is not needed. Removing it will improve performance."
+              }
+            },
+            {
+              "id": "app-InefficientDelayLoading",
+              "messageStrings": {
+                "issue": {
+                  "text": "Inefficient delay loading"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Use variables, collections, and navigation context to share state across screens instead."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "Controls that reference controls on other screens can slow down app loading and navigation. Doing this may force the app to load the other screens immediately, rather than waiting until the user navigates to that screen."
+              }
+            }
+          ],
+          "version": "1.345"
+        }
+      }
+    }
+  ],
+  "version": "2.1.0"
+}

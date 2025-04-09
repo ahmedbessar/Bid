@@ -1,0 +1,451 @@
+"'Pre Bids - Table Screen' As screen.'autoLayout_HeaderFooter_ver1.0'":
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    MainContainer1_ContractManagementTableScreen As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(245, 245, 245, 1)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =16
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =16
+        PaddingLeft: =16
+        PaddingRight: =16
+        PaddingTop: =16
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderContainer_ContractManagementTableScreen As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            ZIndex: =1
+
+            Header_ContractManagementTableScreen As Header:
+                Align: =""
+                BasePaletteColor: =
+                BorderStyle: =""
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =RGBA(12, 35, 63, 1)
+                Height: =75
+                LayoutMinHeight: =75
+                LayoutMinWidth: =Parent.Width
+                Logo: ='Nexel Master-01'
+                OnSelectLogo: =false
+                Style: ='Header.Style'.Neutral
+                Title: ="Contract Requests"
+                TitleFontSize: =20
+                UserEmail: =User().Email
+                UserImage: =User().Image
+                UserName: =User().FullName
+                Width: =Parent.Width
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+        FooterContainer_ContractManagementTableScreen As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =50
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowX: =LayoutOverflow.Scroll
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            ZIndex: =2
+
+            btnHome As Button:
+                Align: =""
+                AlignInContainer: =AlignInContainer.Stretch
+                Appearance: ='ButtonCanvas.Appearance'.Subtle
+                BasePaletteColor: =
+                BorderColor: =
+                BorderStyle: =""
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =32
+                Icon: ="Home"
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =Navigate('Home Screen',ScreenTransition.Fade)
+                Text: ="Home"
+                VerticalAlign: =""
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+            btnNew As Button:
+                Align: =""
+                AlignInContainer: =AlignInContainer.Stretch
+                Appearance: ='ButtonCanvas.Appearance'.Subtle
+                BasePaletteColor: =
+                BorderColor: =
+                BorderStyle: =""
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =32
+                Icon: ="Add"
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =NewForm(Contract_Request_Form);Navigate('Pre Bids - Form Screen',ScreenTransition.Fade)
+                Text: ="New"
+                VerticalAlign: =""
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+            btnEdit As Button:
+                Align: =""
+                AlignInContainer: =AlignInContainer.Stretch
+                Appearance: ='ButtonCanvas.Appearance'.Subtle
+                BasePaletteColor: =
+                BorderColor: =
+                BorderStyle: =""
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =32
+                Icon: ="Edit"
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =EditForm(Contract_Request_Form);Navigate('Pre Bids - Form Screen',ScreenTransition.Fade)
+                Text: ="Edit"
+                VerticalAlign: =""
+                Visible: =And(Not(IsBlank(Contract_Request_Table.Selected)),Contract_Request_Table.Selected.'Contract Status'.Value <> "Approved")
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+            btnPublishBid As Button:
+                Align: =""
+                AlignInContainer: =AlignInContainer.Stretch
+                Appearance: ='ButtonCanvas.Appearance'.Subtle
+                BasePaletteColor: =
+                BorderColor: =
+                BorderStyle: =""
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =32
+                Icon: ="CheckmarkCircle"
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: |-
+                    =Publish_Bid.Run(
+                        Concat(
+                            Contract_Request_Table.Selected.Bidders,
+                            Value,
+                            ","
+                        ),
+                        Contract_Request_Table.Selected.'Project Name',
+                        Contract_Request_Table.Selected.'Due Date',
+                        Contract_Request_Table.Selected.ID
+                    );
+                    Set(
+                        varTimer,
+                        true
+                    )
+                Text: ="Publish"
+                VerticalAlign: =""
+                Visible: =Contract_Request_Table.Selected.'Contract Status'.Value = "Approved"
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =4
+
+            btnRefresh As Button:
+                Align: =""
+                AlignInContainer: =AlignInContainer.Stretch
+                Appearance: ='ButtonCanvas.Appearance'.Subtle
+                BasePaletteColor: =
+                BorderColor: =
+                BorderStyle: =""
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =32
+                Icon: ="ArrowSync"
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =Refresh('Contract Request List')
+                Text: ="Refresh"
+                VerticalAlign: =""
+                Visible: =true
+                Width: =100
+                X: =0
+                Y: =0
+                ZIndex: =5
+
+            btnDetails As Button:
+                Align: =""
+                AlignInContainer: =AlignInContainer.Stretch
+                Appearance: ='ButtonCanvas.Appearance'.Subtle
+                BasePaletteColor: =
+                BorderColor: =
+                BorderStyle: =""
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =32
+                Icon: ="ErrorCircle"
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =Set(varSelectedContract,Contract_Request_Table.Selected);ViewForm(Contract_Request_Form);Navigate('Pre Bids - Form Screen')
+                Text: ="Details"
+                VerticalAlign: =""
+                Visible: =Not(IsBlank(Contract_Request_Table.Selected))
+                Width: =100
+                X: =0
+                Y: =0
+                ZIndex: =6
+
+        MainContainer2_ContractManagementTableScreen As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            ZIndex: =3
+
+            Contract_Request_Table As Table.pcfdataset:
+                ContextualLookupColumnFilters: ="yes"
+                DateOnlyFormat: ='PowerAppsOneGrid.DateOnlyFormat'.ShortDate
+                DateTimeFormat: ='PowerAppsOneGrid.DateTimeFormat'.ShortDateTime
+                DisplayMode: =DisplayMode.Edit
+                EnableRangeSelection: ='PowerAppsOneGrid.EnableRangeSelection'.Enable
+                FillPortions: =1
+                HeaderFontSize: =16
+                Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
+                Items: ='Contract Request List'
+                LayoutMinHeight: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
+                LayoutMinWidth: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
+                LookupFilterBeginsWith: ="no"
+                onCellValueChange: =false
+                onFilter: =false
+                onNavigate: =false
+                onRowSelect: =false
+                onSave: =false
+                OnSelect: =
+                ReflowBehavior: ='PowerAppsOneGrid.ReflowBehavior'.Reflow
+                Visible: =true
+                Width: =Parent.Width
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+                ID2 As PowerAppsOneGridTemplate_dataField.textualColumn:
+                    FieldDisplayName: ="ID"
+                    FieldName: ="ID"
+                    FieldType: ="n"
+                    FieldVariantName: ="textualColumn"
+                    Order: =1
+                    ZIndex: =5
+
+                "'Requestor Name1' As PowerAppsOneGridTemplate_dataField.textualColumn":
+                    FieldDisplayName: ="Requestor Name"
+                    FieldName: ="RequestorName"
+                    FieldType: ="s"
+                    FieldVariantName: ="textualColumn"
+                    Order: =4
+                    ZIndex: =9
+
+                "'Requesting Department1' As PowerAppsOneGridTemplate_dataField.textualColumn":
+                    FieldDisplayName: ="Requesting Department"
+                    FieldName: ="RequestingDepartment"
+                    FieldType: ="E"
+                    FieldVariantName: ="textualColumn"
+                    Order: =5
+                    ZIndex: =10
+
+                Created1 As PowerAppsOneGridTemplate_dataField.textualColumn:
+                    FieldDisplayName: ="Date"
+                    FieldName: ="Created"
+                    FieldType: ="d"
+                    FieldVariantName: ="textualColumn"
+                    Order: =5
+                    ZIndex: =11
+
+                "'Estimated Value1' As PowerAppsOneGridTemplate_dataField.textualColumn":
+                    FieldDisplayName: ="Estimated Value"
+                    FieldName: ="EstimatedValue"
+                    FieldType: ="n"
+                    FieldVariantName: ="textualColumn"
+                    Order: =6
+                    ZIndex: =12
+
+                "'Contract Status1' As PowerAppsOneGridTemplate_dataField.textualColumn":
+                    FieldDisplayName: ="Contract Status"
+                    FieldName: ="ContractStatus"
+                    FieldType: ="E"
+                    FieldVariantName: ="textualColumn"
+                    Order: =7
+                    ZIndex: =13
+
+                Title2 As PowerAppsOneGridTemplate_dataField.textualColumn:
+                    FieldDisplayName: ="Bid Name"
+                    FieldName: ="Title"
+                    FieldType: ="s"
+                    FieldVariantName: ="textualColumn"
+                    Order: =3
+                    ZIndex: =14
+
+                "'Published Status1' As PowerAppsOneGridTemplate_dataField.textualColumn":
+                    FieldDisplayName: ="Published Status"
+                    FieldName: ="BidStatus"
+                    FieldType: ="E"
+                    FieldVariantName: ="textualColumn"
+                    Order: =8
+                    ZIndex: =15
+
+    Background_ContractManagementTableScreen As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(0,0,0,0.3)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Visible: =varTimer
+        Width: =Parent.Width
+        ZIndex: =2
+
+        PopupContainer_ContractManagementTableScreen As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            ZIndex: =1
+
+            Text_Container As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                FillPortions: =0
+                Height: =100
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =1
+
+                SuccessMessage As Text:
+                    Align: ='TextCanvas.Align'.Center
+                    AutoHeight: =false
+                    BorderColor: =
+                    BorderStyle: =""
+                    DisplayMode: =DisplayMode.Edit
+                    Fill: =
+                    FontColor: =
+                    Height: =Parent.Height
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =96
+                    Size: =16
+                    Text: ="The bid " & Contract_Request_Table.Selected.'Project Name' & " has been published successfully"
+                    VerticalAlign: =VerticalAlign.Middle
+                    Weight: ='TextCanvas.Weight'.Bold
+                    Width: =Parent.Width
+                    Wrap: =false
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+            btnOK_Popup As Button:
+                Align: =""
+                BasePaletteColor: =
+                BorderColor: =
+                BorderStyle: =""
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =32
+                Icon: =""
+                IconRotation: =0
+                IconStyle: ="Outline"
+                Layout: ="Icon before"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =Set(varTimer,false)
+                Text: ="Close"
+                VerticalAlign: =""
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+    Timer_ContractManagementTableScreen As timer:
+        BorderColor: =App.Theme.Colors.Primary
+        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Duration: =3000
+        Fill: =App.Theme.Colors.Primary
+        Font: =App.Theme.Font
+        HoverBorderColor: =App.Theme.Colors.Darker10
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =App.Theme.Colors.Darker10
+        OnTimerEnd: =Set(varTimer,false)
+        PressedBorderColor: =App.Theme.Colors.Darker40
+        PressedColor: =Self.Color
+        PressedFill: =App.Theme.Colors.Darker40
+        Start: =varTimer
+        Visible: =false
+        X: =555
+        Y: =711
+        ZIndex: =3
+

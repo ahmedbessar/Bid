@@ -1,0 +1,182 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Supplier Management - Table Screen:
+    Children:
+      - ScreenContainer1_3:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            Fill: =RGBA(245, 245, 245, 1)
+            Height: =Parent.Height
+            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =16
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Width: =Parent.Width
+          Children:
+            - HeaderContainer1_3:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  Fill: =RGBA(255, 255, 255, 1)
+                  FillPortions: =0
+                  Height: =75
+                  LayoutDirection: =LayoutDirection.Horizontal
+                Children:
+                  - Header1_3:
+                      Control: Header@0.0.42
+                      Properties:
+                        FontColor: =RGBA(12, 35, 63, 1)
+                        Logo: ='Nexel Master-01'
+                        Style: ='Header.Style'.Neutral
+                        Title: ="Suppliers List"
+            - FooterContainer1_3:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  Fill: =RGBA(255, 255, 255, 1)
+                  FillPortions: =0
+                  Height: =50
+                  LayoutAlignItems: =LayoutAlignItems.Center
+                  LayoutDirection: =LayoutDirection.Horizontal
+                Children:
+                  - btnHome_1:
+                      Control: Button@0.0.44
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Appearance: ='ButtonCanvas.Appearance'.Subtle
+                        Icon: ="Home"
+                        OnSelect: =Navigate('Home Screen',ScreenTransition.Fade)
+                        Text: ="Home"
+                  - btnNew_1:
+                      Control: Button@0.0.44
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Appearance: ='ButtonCanvas.Appearance'.Subtle
+                        Icon: ="Add"
+                        OnSelect: =NewForm(Supplier_Management_Form);Navigate('Supplier Management - Form Screen',ScreenTransition.Fade)
+                        Text: ="+ New"
+                  - btnEdit_1:
+                      Control: Button@0.0.44
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Appearance: ='ButtonCanvas.Appearance'.Subtle
+                        Icon: ="Edit"
+                        OnSelect: =EditForm(Supplier_Management_Form);Navigate('Supplier Management - Form Screen',ScreenTransition.Fade)
+                        Text: ="Edit"
+                        Visible: =Not(IsBlank(Suppliers_List_Table.Selected))
+                  - btnRefresh_1:
+                      Control: Button@0.0.44
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Appearance: ='ButtonCanvas.Appearance'.Subtle
+                        Icon: ="ArrowSync"
+                        OnSelect: =Refresh('Suppliers List')
+                        Text: ="Refresh"
+                        Width: =100
+                  - btnDelete_1:
+                      Control: Button@0.0.44
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Appearance: ='ButtonCanvas.Appearance'.Subtle
+                        Icon: ="Delete"
+                        OnSelect: =Remove('Suppliers List',Suppliers_List_Table.Selected)
+                        Text: ="Delete"
+                        Visible: =Not(IsBlank(Suppliers_List_Table.Selected))
+            - MainContainer1_3:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  Fill: =RGBA(255, 255, 255, 1)
+                  LayoutDirection: =LayoutDirection.Vertical
+                Children:
+                  - Suppliers_List_Table:
+                      Control: Table@1.0.278
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        EnableRangeSelection: ='PowerAppsOneGrid.EnableRangeSelection'.Disable
+                        FillPortions: =1
+                        Items: ='Suppliers List'
+                        ReflowBehavior: ='PowerAppsOneGrid.ReflowBehavior'.Reflow
+                      Children:
+                        - Contact Person Name2:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Contact Person Name"
+                              FieldName: ="ContactPerson"
+                              FieldType: ="s"
+                              Order: =8
+                              Width: =100
+                        - Contact Person Phone2:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Contact Person Phone"
+                              FieldName: ="ContactPersonPhone"
+                              FieldType: ="s"
+                              Order: =8
+                              Width: =100
+                        - Contact Person Email2:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Contact Person Email"
+                              FieldName: ="ContactPersonEmail"
+                              FieldType: ="s"
+                              Order: =8
+                              Width: =100
+                        - Supplier Category2:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Supplier Category"
+                              FieldName: ="SupplierCategory"
+                              FieldType: ="E"
+                              Order: =4
+                              Width: =100
+                        - Status2:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Status"
+                              FieldName: ="Status"
+                              FieldType: ="E"
+                              Order: =7
+                              Width: =100
+                        - NDA Signed2:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="NDA Signed"
+                              FieldName: ="NDASigned"
+                              FieldType: ="E"
+                              Order: =6
+                              Width: =100
+                        - Name1:
+                            Control: TableDataField@1.5.0
+                            Variant: textualColumn
+                            IsLocked: true
+                            Properties:
+                              FieldDisplayName: ="Name"
+                              FieldName: ="{Name}"
+                              FieldType: ="s"
+                              Order: =3
+                              Width: =100

@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "7e3636d8-4fa6-471b-9e8b-addbfeca1d15",
+    "Name": "Send_Extended_Due_Dates",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "58d96b70-df20-ef11-840a-000d3a229fa1"
+  }
+]

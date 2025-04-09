@@ -1,0 +1,26 @@
+{
+  "Themes": [
+    {
+      "EntityName": "PowerAppsTheme",
+      "ThemeName": "PowerAppsTheme"
+    },
+    {
+      "BasePaletteColor": "#0c233f",
+      "EntityName": "Nexel Labs",
+      "Font": "Segoe UI",
+      "HueTorsion": 0,
+      "ThemeName": "Nexel Labs",
+      "ThemePrimaryColorLocked": false,
+      "Vibrancy": 100
+    },
+    {
+      "BasePaletteColor": "#026938",
+      "EntityName": "Saudia Technic",
+      "Font": "Segoe UI",
+      "HueTorsion": 0,
+      "ThemeName": "Saudia Technic",
+      "ThemePrimaryColorLocked": false,
+      "Vibrancy": 50
+    }
+  ]
+}

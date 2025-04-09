@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "59094400-b25c-4f5e-a8de-57f6c7435f56",
+    "Name": "Start_Bid_Evaluation",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "82769624-7231-ef11-8409-7c1e5228a8c8"
+  }
+]
